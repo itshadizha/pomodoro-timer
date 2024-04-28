@@ -23,9 +23,9 @@ const PomodoroForm = ({ closeModal, onSubmit }) => {
     }
 
     onSubmit({
-      focus: focusValue,
-      break: breakValue,
-      rest: restValue,
+      focus: +focusValue,
+      break: +breakValue,
+      rest: +restValue,
     });
     closeModal()
   };
